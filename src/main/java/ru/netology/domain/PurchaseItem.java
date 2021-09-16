@@ -13,4 +13,21 @@ public class PurchaseItem {
     private String productName;
     private int productPrice;
     private int count;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public PurchaseItem(int id, int productId, String productName, int productPrice, int count) {
+        this.id = id;
+        this.productId = productId;
+        this.productName = productName;
+        this.productPrice = productPrice;
+        this.count = count;
+
+    }
 }
